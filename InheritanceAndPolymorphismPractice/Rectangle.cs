@@ -16,9 +16,13 @@ namespace InheritanceAndPolymorphismPractice
             set { this.area = value; }
         }
 
-        public Rectangle(double area)
+        //A derived class does NOT inherit the constructors of the Base class
+        //However, the constructors of the bass class can be accessed using the "base" keyword.
+        public Rectangle(double area) : base(4)
         {
             this.area = area;
         }
+
+
     }
 }
